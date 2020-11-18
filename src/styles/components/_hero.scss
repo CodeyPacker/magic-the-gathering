@@ -1,22 +1,5 @@
-body {
-    margin: 0;
-    font-family: 'Karma', serif;
-    font-size: 16px; 
-}
-
-h1,
-p {
-    margin-top: 0;
-}
-
-h1 {
-    margin-bottom: .15em;
-    padding: 0;
-}
-
-
 .index-hero {
-    background-image: url("../images/index-hero.jpg");
+    background-image: url("/images/index-hero.jpg");
     min-height: 80vh;
     text-align: center;
     color: rgba(255, 115, 0, 0.897);
