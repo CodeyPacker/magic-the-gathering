@@ -1,31 +1,37 @@
 .index-hero {
-    position: relative;
-    background-image: url("/images/index-hero.jpg");
-    background-position: center;
-    background-size: cover;
-    min-height: 100vh;
-    text-align: center;
-    color: $white;
-    margin: 0 auto;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    position: relative;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    color: $white;
     font-size: 2rem;
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-image: url("/images/index-hero.jpg");
 
     &::after {
+        background-color: black;
         position: absolute;
         content: '';
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: black;
         opacity: .5;
         z-index: 2;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
     }
 
     .intro {
+        opacity: 0;
         z-index: 3;
+        animation-name: fadeIn;
+        animation-duration: .7s;
+        animation-delay: .5s;
+        animation-fill-mode: forwards;
     }
 }
